@@ -3,12 +3,15 @@ git config --global user.name "hoverzhao"
 git config --global user.email "gaspainton@126.com"
 ssk-keygen -t rsa -C "gaspainton@126.com"
 pbcopy < ~/.ssh/id_rsa.pub
+
 ssh -T git@github.com
 
 git remote add origin git@github.com:hoverzhao/coding
 git push -u origin master
 git show-ref
 git push origin --delete master
+
+#origin 为远程仓库名，main 为远程分支名 -u 为关联远程分支(只需第一次)
 git push -u origin HEAD:main
 
 
@@ -17,6 +20,14 @@ git config pull.rebase false
 git pull origin main --allow-unrelated-histories
 
 git mergetool 
-git commit . -m "merge"
 
+git commit . -m "merge"
 git push origin HEAD:main
+
+
+git log
+git reset --herd 445e4d
+删除最近一次提交,改变、不改变本地文件
+git reset --hard HEAD^
+git reset --soft HEAD^
+
