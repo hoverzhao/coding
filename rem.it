@@ -1,0 +1,22 @@
+git init
+git config --global user.name "hoverzhao"
+git config --global user.email "gaspainton@126.com"
+ssk-keygen -t rsa -C "gaspainton@126.com"
+pbcopy < ~/.ssh/id_rsa.pub
+ssh -T git@github.com
+
+git remote add origin git@github.com:hoverzhao/coding
+git push -u origin master
+git show-ref
+git push origin --delete master
+git push -u origin HEAD:main
+
+
+#合并冲突
+git config pull.rebase false
+git pull origin main --allow-unrelated-histories
+
+git mergetool 
+git commit . -m "merge"
+
+git push origin HEAD:main
