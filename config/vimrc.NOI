@@ -1,0 +1,39 @@
+set nu ts=4 sw=4 ai si cindent  mouse=a
+set bs=indent,eol,start
+syntax on
+
+let mapleader = " "
+inoremap jk <esc>
+nnoremap <c-j> 5j
+nnoremap <c-k> 5k
+nnoremap <leader>w :w! <cr>
+nnoremap <leader>rc :e ~/.vimrc <cr>
+nnoremap <leader>rs :so ~/.vimrc <cr>
+
+func! Winshow()
+	let nno = expand("%:r") . ".out"
+	let nni = expand("%:r") . ".in"
+	if  bufexists(nno)
+		exec "bw! " . nno
+		exec "bw! " . nni
+	else
+		exec "new " . nno
+		exec "vnew " . nni
+		exec "resize 10"
+	endif
+endfunc
+
+let $CXXFLAGS='-std=c++17 -g -lm -Wall -fsanitize=undefined'
+nmap <silent><F9> :w!<cr> :make %< <cr> :cw <cr> :!./%< <cr>
+nmap <f8> :call Winshow() <cr>
+nmap <f4> :packadd termdebug <cr> :Termdebug ./%< <cr>
+let g:termdebug_wide=10
+nmap <f2> :exec "!ln -s % a.cpp" <cr>
+
+au BufNewFile *.cpp 0r ~/noi/Github/coding/skeleton.c | %s/xxx/\=expand("%:r")/g
+au FileType cpp set keywordprg=cppman
+"ulimit -s unlimited
+"setxkbmap -option ctrl:swapcaps
+"setxkbmap -option
+"chmod +x dp.sh
+"colo molokai
