@@ -18,16 +18,17 @@
 # int a[3] = {0, 1, 2};
 # var o = {a: 'foo', b: '43', c: {}};
 # -> ], }, ), ]; }; );  +; -; (+) (-) (*) (/) ++); --); ++]); --]); (" "); [" "]; {" "}; &( (& += -= *=  /=
+# mlt raw " i++); i++); i++); ++i); ++i); ++i); i++); i++); i++); ++i); ++i); ++i); i++); i++); i++); ++i); ++i); ++i); i++); i++); i++); ++i); ++i); ++i); i++); i++); i++); ++i); ++i); ++i); i++); i++); i++); ++i); ++i); ++i); i++); i++); i++); ++i); ++i); ++i); i++); i++); i++); ++i); ++i); ++i); i++); i++); i++); ++i); ++i); ++i); i++); i++); i++); ++i); ++i); ++i); i++); i++); i++); ++i); ++i); ++i);"
 
-# mlt raw " i++); i++);++i); i--);--i); i++);++i); i--);--i); i++);++i); i--);--i); i++);++i); i--);--i); i++);++i); i--);--i); i++);++i); i--);--i); i++);++i); i++); i++); i++);++i); i--);--i); i++);++i); i--);--i); i++);++i); i--);--i); i++);++i); i--);--i); i++);++i); i--);--i); i++);++i); i--);--i); i++);++i); i++);"
-# mlt raw " j++); j++);++j); j--);--j); j++);++j); j--);--j); j++);++j); j--);--j); j++);++j); j--);--j); j++);++j); j--);--j); j++);++j); j--);--j); j++);++j); j++); j++); j++);++j); j--);--j); j++);++j); j--);--j); j++);++j); j--);--j); j++);++j); j--);--j); j++);++j); j--);--j); j++);++j); j--);--j); j++);++j); j++);"
+# mlt raw " i--); i--); i--); --i); --i); --i); i--); i--); i--); --i); --i); --i); i--); i--); i--); --i); --i); --i); i--); i--); i--); --i); --i); --i); i--); i--); i--); --i); --i); --i); i--); i--); i--); --i); --i); --i); i--); i--); i--); --i); --i); --i); i--); i--); i--); --i); --i); --i); i--); i--); i--); --i); --i); --i); i--); i--); i--); --i); --i); --i); i--); i--); i--); --i); --i); --i);"
+
 # "+p     vbUea   {<cr>}<c-[>ko   10jk<c-e>
 
 ##----- r2( r3) r4;
 # mlt raw " get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();get(); get();get();get();get();get();get();get();get();get();get();get();get();get();get();get();"
 
 ##----- 花阔号换行 输入 r3{ r5<cr> r4}  l4<ctrl>+r3[  r2k r3o
-mlt raw "{\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko"
+#mlt raw "{\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko"
 # mlt raw "{\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko"
 # mlt raw "int a, b, c, d, e, f; int a, b, c, d, e, f; int a, b, c, d, e, f; int a, b, c, d, e, f; int a, b, c, d, e, f; int a, b, c, d, e, f; int a, b, c, d, e, f; int a, b, c, d, e, f; int a, b, c, d, e, f; int a, b, c, d, e, f; int a, b, c, d, e, f; int a, b, c, d, e, f; int a, b, c, d, e, f; int a, b, c, d, e, f; int a, b, c, d, e, f; int a, b, c, d, e, f; int a, b, c, d, e, f; int a, b, c, d, e, f; int a, b, c, d, e, f; int a, b, c, d, e, f; int a, b, c, d, e, f; " 
 

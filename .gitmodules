@@ -1,0 +1,3 @@
+[submodule "duipai/testlib"]
+	path = duipai/testlib
+	url = https://github.com/MikeMirzayanov/testlib

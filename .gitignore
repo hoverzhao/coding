@@ -1,6 +1,12 @@
 a
 a.*
 a.dYSM/
+b
+b.*
+b.dYSM/
+c
+c.*
+c.dYSM/
 # Prerequisites
 *.d
 
