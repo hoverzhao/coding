@@ -7,6 +7,13 @@ b.dYSM/
 c
 c.*
 c.dYSM/
+g
+g.*
+g.dYSM/
+
+*.dYSM/
+
+
 # Prerequisites
 *.d
 
