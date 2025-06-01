@@ -1,0 +1,79 @@
+set nocompatible 
+filetype plugin on
+
+call plug#begin()
+"	Plug 'vimwiki/vimwiki'
+"	Plug 'tpope/vim-commentary'
+"	Plug 'arzg/vim-colors-xcode'
+"	Plug 'Exafunction/codeium.vim', { 'branch': 'main' }	
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	Plug 'junegunn/fzf.vim'
+	Plug 'lifepillar/vim-solarized8'
+call plug#end()
+
+set nu ts=4 sw=4 autoindent cindent smartindent noswapfile undofile autoread
+"syntax on
+set autochdir
+set undodir="~/.vim/undodir"
+set undofile
+set undolevels =1000
+set undoreload =10000
+set fileencoding=utf-8
+set bs=indent,eol,start
+
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+syntax on
+set background=dark
+set t_Co=256
+"let g:solarized_termcolors=256
+colo solarized8
+
+
+let mapleader = " "
+inoremap jk <esc>
+nnoremap <c-j> 5j
+nnoremap <c-k> 5k
+nnoremap <c-h> ^
+nnoremap <c-l> $
+nnoremap <leader>w :w! <cr>
+nnoremap <leader>rc :e ~/.vimrc <cr>
+nnoremap <leader>rs :so ~/.vimrc <cr>
+nnoremap <leader>yf :let @+=expand("%:.") <cr>
+nnoremap <leader>wl :VimwikiToggleListItem <cr>
+"nnoremap <key> v2a]:keeppattern s/\%V[\[\]]//g<CR>
+
+
+let g:vimwiki_list = [{'path': '~/github/wiki/noi'},
+	\ {'path': '~/github/wiki/math'},
+	\ {'path': '~/github/wiki/game'}]
+
+func! Winshow()
+	let nno = expand("%:r") . ".out"
+	let nni = expand("%:r") . ".in"
+	if  bufexists(nno)
+		exec "bw! " . nno
+		exec "bw! " . nni
+	else
+		exec "new " . nno
+		exec "vnew " . nni
+		exec "resize 10"
+	endif
+endfunc
+
+let $CXXFLAGS='-std=c++17 -g -lm -Wall -fsanitize=undefined'
+nmap <silent><F9> :w!<cr> :make %< <cr> :cw <cr> :!./%< <cr>
+nmap <f8> :call Winshow() <cr>
+nmap <f4> :packadd termdebug <cr> :Termdebug ./%< <cr>
+let g:termdebug_wide=10
+nmap <f2> :exec "!ln -s % a.cpp" <cr>
+
+"au BufNewFile *.cpp 0r ~/noi/coding/config/skeleton.c | %s/xxx/\=expand("%:r")/g
+au BufNewFile *.cpp 0r ~/noi/coding/config/skeleton_full.c | %s/xxx/\=expand("%:r")/g
+au FileType cpp set keywordprg=cppman
+"#!/bin/bash
+"ulimit -s unlimited
+"setxkbmap -option ctrl:swapcaps
+"setxkbmap -option
+"chmod +x dp.sh
+"colo molokai

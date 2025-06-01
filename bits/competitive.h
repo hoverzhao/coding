@@ -1,4 +1,3 @@
-#include "bits/stdc++.h"
 using namespace std;
 
 typedef long long ll;
@@ -31,13 +30,13 @@ typedef vector<pii> vpii;
 #define rep1(i, n) for (int i = 1; i <= (n); ++i)
 #define FOR(i, a, b) for (int i = (a); i < (b); ++i)
 
-#define endl '\n'
+//#define endl '\n'
 #define debug(...) fprintf(stderr, __VA_ARGS__)
 
-mt19937 rng((unsigned int)chrono::steady_clock::now().time_since_epoch().count());
+mt19937 orng((unsigned int)chrono::steady_clock::now().time_since_epoch().count());
 
 int random(int l, int r) {
-	return uniform_int_distribution<int>(l, r)(rng);
+	return uniform_int_distribution<int>(l, r)(orng);
 }
 
 
