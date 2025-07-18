@@ -45,14 +45,18 @@ For n = 10, t =  - 1000, a star graph (there's only one non-leaf ver
 	vector<int> p(n);
 
 	/* setup parents for vertices 1..n-1 */
+	// i is the index of the vertex, p[i] is the parent of vertex i 
 	for(int i = 0; i < n; ++i)
 		if (i > 0)
 			p[i] = rnd.wnext(i, t);
 
+	cout << endl;
 	printf("%d\n", n);
 
 	/* shuffle vertices 1..n-1 */
 	vector<int> perm(n);
+
+	// perm[i] is the i-th vertex in the shuffled order, p[i] is the parent of vertex perm[i]
 	for(int i = 0; i < n; ++i)
 		perm[i] = i;
 	shuffle(perm.begin() + 1, perm.end());
