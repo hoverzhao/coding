@@ -61,7 +61,7 @@ func! Winshow()
 	endif
 endfunc
 
-let $CXXFLAGS='-std=c++17 -g -lm -Wall -fsanitize=undefined'
+let $CXXFLAGS='-std=c++17 -Wshadow -Wall  -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG -g'
 nmap <silent><F9> :w!<cr> :make %< <cr> :cw <cr> :!./%< <cr>
 nmap <f8> :call Winshow() <cr>
 nmap <f4> :packadd termdebug <cr> :Termdebug ./%< <cr>
@@ -77,3 +77,4 @@ au FileType cpp set keywordprg=cppman
 "setxkbmap -option
 "chmod +x dp.sh
 "colo molokai
+set rtp+=/usr/local/opt/fzf
