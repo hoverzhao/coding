@@ -1,17 +1,6 @@
+#!/bin/sh
 #mlt raw 'eh 0 iv 9 mc ja &! hw #% wo @* bot -$ [ep wy;cu ?e. +kw-ty {} qc  v?'
 #mlt raw '58vector920switch93forls#()&|:defaultpe98double65freopen7la<< }{js;idd[09812`end'
 mlt raw 'a5iy6xcm8vp97for021bmt4swi3$-lq=)`\]ub[kr;wh?.rb,<295>\318@!0764&p=*a;++l;--i)^for()%~%s%x"=_'
 
 #mlt raw '99u$99\x12G99u$99\x12gg99u$99\x12G99u$99\x12gg99u$99\x12G99u$99\x12gg99u$99\x12G99u$99\x12gg99u$99\x12G99u$99\x12gg99u$99\x12G99u$99\x12gg99u$99\x12G99u$99\x12gg99u$99\x12G99u$99\x12gg99u$99\x12G99u$99\x12gg99u$99\x12G99u$99\x12gg99u$99\x12G99u$99\x12gg'
-# mlt raw " i++); i++); i++); ++i); ++i); ++i); i++); i++); i++); ++i); ++i); ++i); i++); i++); i++); ++i); ++i); ++i); i++); i++); i++); ++i); ++i); ++i); i++); i++); i++); ++i); ++i); ++i); i++); i++); i++); ++i); ++i); ++i); i++); i++); i++); ++i); ++i); ++i); i++); i++); i++); ++i); ++i); ++i); i++); i++); i++); ++i); ++i); ++i); i++); i++); i++); ++i); ++i); ++i); i++); i++); i++); ++i); ++i); ++i);"
-
-# mlt raw " i--); i--); i--); --i); --i); --i); i--); i--); i--); --i); --i); --i); i--); i--); i--); --i); --i); --i); i--); i--); i--); --i); --i); --i); i--); i--); i--); --i); --i); --i); i--); i--); i--); --i); --i); --i); i--); i--); i--); --i); --i); --i); i--); i--); i--); --i); --i); --i); i--); i--); i--); --i); --i); --i); i--); i--); i--); --i); --i); --i); i--); i--); i--); --i); --i); --i);"
-#
-# mlt raw '("%d \n"); ("%d \n"); ("%d \n"); ("%d \n"); ("%d \n"); ("%d \n"); ("%d \n"); ("%d \n"); ("%d \n"); ("%d \n"); ("%d \n"); '
-
-#------选中函数
-#------ r4] r3[ <leftshift>v l3% l2y r3d -------选中函数yd
-# mlt raw ";jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky ;jk][V%ky "
-
-#mlt raw "{\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko {\r}\x1Bko"
-# mlt raw "for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko {\r}\x1Bko"
