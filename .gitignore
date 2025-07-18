@@ -46,3 +46,4 @@ g.dYSM/
 *.exe
 *.out
 *.app
+*.DS_Store
