@@ -21,14 +21,11 @@ set undoreload =10000
 set fileencoding=utf-8
 set bs=indent,eol,start
 
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 syntax on
+set termguicolors
 set background=dark
-set t_Co=256
-"let g:solarized_termcolors=256
 colo solarized8
-
+set rtp+=/usr/local/opt/fzf
 
 let mapleader = " "
 inoremap jk <esc>
@@ -77,4 +74,3 @@ au FileType cpp set keywordprg=cppman
 "setxkbmap -option
 "chmod +x dp.sh
 "colo molokai
-set rtp+=/usr/local/opt/fzf
