@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main()
+main()
 {
     int a=10,b=35; // 4 bytes
     cout<<"Value of a : "<<a<<" Address of a : "<<&a <<endl;
@@ -43,5 +43,5 @@ int main()
 
     const string myname="Tridib";
     cout << myname << endl;
-	return 0;
+
 }

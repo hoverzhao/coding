@@ -2,14 +2,13 @@
 
 using namespace std;
 
-int main()
+main()
 {
     //Declaring an integer type variable A, allocates 4 bytes of memory.
     int A=4;
 
     cout<<A <<endl;
     //Prints the address of the variable A.
-	//寻地址
     cout<<&A <<endl;
 
     /*
@@ -24,5 +23,4 @@ int main()
     A=10;
     cout<<A <<endl;
     cout<<&A;
-	return 0;
 }

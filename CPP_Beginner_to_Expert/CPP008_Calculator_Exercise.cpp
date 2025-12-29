@@ -6,7 +6,7 @@
 #include <iostream>
 using namespace std;
 
-int main()
+main()
 {
     double var1, var2;
 
@@ -59,5 +59,4 @@ int main()
 
     if (decision2 == 'y' || decision2 == 'Y')
         goto beginning;
-	return 0;
 }
