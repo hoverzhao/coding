@@ -1,51 +1,24 @@
-#include <bits/stdc++.h>
-
-using i64 = long long;
-using u64 = unsigned long long;
-using u32 = unsigned;
-
-using u128 = unsigned __int128;
-using i128 = __int128;
-
-void solve() {
-	int n, k;
-	std::cin >> n >> k;
-
-	std::vector<int> a(n);
-	for (int i = 0; i < n; i++) {
-		std::cin >> a[i];
-	}
-
-	std::vector<int> s(n + 1);
-	for (int i = 0; i < n; i++) {
-		s[i + 1] = s[i] + a[i];
-	}
-
-	int ans = 0;
-	int x = 0;
-	while (x + k <= n) {
-		if (s[x + k] == s[x]) {
-			x += k + 1;
-			ans++;
-		} else {
-			x++;
-		}
-	}
-	std::cout << ans << "\n";
+bool find(int j, vector<vi>& g, vi& btoa, vi& vis) {
+if (btoa[j] == -1) return 1;
+vis[j] = 1; int di = btoa[j];
+for (int e : g[di])
+if (!vis[e] && find(e, g, btoa, vis)) {
+	btoa[e] = di;
+mt19937 mt_test(48);
+for(int i = 0; i < N; i++) test_P.push_back(i);
+while(t--){
+shuffle(test_P.begin(), test_P.end(), mt_test);
+bool ok = true;
+for(int i = 0; i < N; i++) {
+	if(test_P[i] == i) ok = false;
 }
-
-int main() {
-	std::ios::sync_with_stdio(false);
-	std::cin.tie(nullptr);
-
-	int t;
-	std::cin >> t;
-
-	while (t--) {
-		solve();
-	}
-
-	return 0;
-}
-//By *jiangly, contest: Codeforces Round 1037 (Div. 3), problem: (B) No Casino in the Mountains
-//https://codeforces.com/contest/2126/problem/b
+array<std::array<int, 3>, 3> v{
+mp.insert({{u, v}, edge_t{{std::array<int, 3>{0, 0, 0}, {0, 1, 1}, {0, 1, 1}}}});
+};
+edge_t rev() {
+for (int i = 0; i <= 2; i++) {
+for (int j = 0; j <= 2; j++) {
+r.v[i][j] = v[j][i];
+setmax(r.v[ai][bk], a.v[ai][aj] + v[2-(aj+bj)] + b.v[bj][bk]);
+xxxxxxxxxxxx
+xxxxxxxxxx
