@@ -2,10 +2,7 @@ set nocompatible
 filetype plugin on
 
 call plug#begin()
-"	Plug 'vimwiki/vimwiki'
-"	Plug 'tpope/vim-commentary'
-"	Plug 'arzg/vim-colors-xcode'
-"	Plug 'Exafunction/codeium.vim', { 'branch': 'main' }	
+	Plug 'tpope/vim-commentary'
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'junegunn/fzf.vim'
 	Plug 'lifepillar/vim-solarized8'
@@ -21,14 +18,10 @@ set undoreload =10000
 set fileencoding=utf-8
 set bs=indent,eol,start
 
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 syntax on
 set background=dark
-set t_Co=256
-"let g:solarized_termcolors=256
+set termguicolors
 colo solarized8
-
 
 let mapleader = " "
 inoremap jk <esc>
@@ -40,13 +33,6 @@ nnoremap <leader>w :w! <cr>
 nnoremap <leader>rc :e ~/.vimrc <cr>
 nnoremap <leader>rs :so ~/.vimrc <cr>
 nnoremap <leader>yf :let @+=expand("%:.") <cr>
-nnoremap <leader>wl :VimwikiToggleListItem <cr>
-"nnoremap <key> v2a]:keeppattern s/\%V[\[\]]//g<CR>
-
-
-let g:vimwiki_list = [{'path': '~/github/wiki/noi'},
-	\ {'path': '~/github/wiki/math'},
-	\ {'path': '~/github/wiki/game'}]
 
 func! Winshow()
 	let nno = expand("%:r") . ".out"

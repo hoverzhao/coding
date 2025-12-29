@@ -2,9 +2,9 @@ set nocompatible
 filetype plugin on
 
 call plug#begin()
-	Plug 'vimwiki/vimwiki'
 	Plug 'tpope/vim-commentary'
 	Plug 'Exafunction/windsurf.vim'
+	Plug 'lifepillar/vim-solarized8'
 call plug#end()
 
 set nu ru ts=4 sw=4 autoindent cindent smartindent noswapfile undofile autoread
@@ -18,16 +18,10 @@ set fileencoding=utf-8
 set bs=indent,eol,start
 set bg=dark
 
-<<<<<<< HEAD
-set termguicolors
-colo solarized8
-=======
-syntax on
 set termguicolors
 set background=dark
 colo solarized8
 set rtp+=/usr/local/opt/fzf
->>>>>>> fbbe05c51eebfae90f32855d9b5c43b49491cfe4
 
 let mapleader = " "
 inoremap jk <esc>
@@ -37,13 +31,6 @@ nnoremap <leader>w :w! <cr>
 nnoremap <leader>rc :e ~/.vimrc <cr>
 nnoremap <leader>rs :so ~/.vimrc <cr>
 nnoremap <leader>yf :let @+=expand("%:.") <cr>
-nnoremap <leader>wl :VimwikiToggleListItem <cr>
-"nnoremap <key> v2a]:keeppattern s/\%V[\[\]]//g<CR>
-
-
-let g:vimwiki_list = [{'path': '~/github/wiki/noi'},
-	\ {'path': '~/github/wiki/math'},
-	\ {'path': '~/github/wiki/game'}]
 
 func! Winshow()
 	let nno = expand("%:r") . ".out"
@@ -73,10 +60,6 @@ au FileType cpp set keywordprg=cppman
 "setxkbmap -option
 "chmod +x dp.sh
 "colo molokai
-<<<<<<< HEAD
-set rtp+=/usr/local/opt/fzf
-let $http_proxy = ''
-let $https_proxy = ''
-let $all_proxy = ''
-=======
->>>>>>> fbbe05c51eebfae90f32855d9b5c43b49491cfe4
+"let $http_proxy = ''
+"let $https_proxy = ''
+"let $all_proxy = ''

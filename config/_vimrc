@@ -1,0 +1,72 @@
+set nocompatible 
+filetype plugin on
+
+call plug#begin()
+	Plug 'tpope/vim-commentary'
+	Plug 'Exafunction/windsurf.vim'
+	Plug 'lifepillar/vim-solarized8'
+call plug#end()
+
+set nu ts=4 sw=4 autoindent cindent smartindent noswapfile undofile autoread
+syntax on
+set autochdir
+set undodir="~/.vim/undodir"
+set undofile
+set undolevels =1000
+set undoreload =10000
+set fileencoding=utf-8
+set bs=indent,eol,start
+
+set termguicolors
+set background=dark
+colo solarized8
+
+
+let mapleader = " "
+inoremap jk <esc>
+nnoremap <c-j> 5j
+nnoremap <c-k> 5k
+nnoremap <c-h> ^
+nnoremap <c-l> $
+nnoremap <leader>w :w! <cr>
+nnoremap <leader>rc :e ~/.vimrc <cr>
+nnoremap <leader>rs :so ~/.vimrc <cr>
+nnoremap <leader>yf :let @+=expand("%:.") <cr>
+
+func! Winshow()
+	let nno = expand("%:r") . ".out"
+	let nni = expand("%:r") . ".in"
+	if  bufexists(nno)
+		exec "bw! " . nno
+		exec "bw! " . nni
+	else
+		exec "new " . nno
+		exec "vnew " . nni
+		exec "resize 10"
+	endif
+endfunc
+
+set shell=cmd.exe
+set shellcmdflag=/c
+
+set makeprg=g++\ -std=c++17\ -g\ -Wall\ -fsanitize=address\ %\ -o\ %<.exe
+nmap <silent> <F9> :w<CR>:make<CR>:cw<cr>:!%<.exe<cr>
+
+“let $CXXFLAGS='-std=c++17 -g -lm -Wall -fsanitize=undefined'
+”nmap <silent><F9> :w!<cr> :make %< <cr> :cw <cr> :!./%< <cr>
+
+nmap <f8> :call Winshow() <cr>
+nnoremap <F4> :w<CR>:packadd termdebug<CR>:Termdebug %<.exe<CR>
+
+let g:termdebug_wide=10
+nmap <f2> :exec "!ln -s % a.cpp" <cr>
+
+"au BufNewFile *.cpp 0r ~/noi/coding/config/skeleton.c | %s/xxx/\=expand("%:r")/g
+au BufNewFile *.cpp 0r ~/noi/coding/config/skeleton_full.c | %s/xxx/\=expand("%:r")/g
+au FileType cpp set keywordprg=cppman
+"#!/bin/bash
+"ulimit -s unlimited
+"setxkbmap -option ctrl:swapcaps
+"setxkbmap -option
+"chmod +x dp.sh
+"colo molokai
