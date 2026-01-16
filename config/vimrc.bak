@@ -3,7 +3,8 @@ filetype plugin on
 
 call plug#begin()
 	Plug 'tpope/vim-commentary'
-	Plug 'Exafunction/windsurf.vim'
+"	Plug 'Exafunction/windsurf.vim'
+	Plug 'github/copilot.vim'
 	Plug 'lifepillar/vim-solarized8'
 call plug#end()
 
@@ -31,6 +32,8 @@ nnoremap <leader>w :w! <cr>
 nnoremap <leader>rc :e ~/.vimrc <cr>
 nnoremap <leader>rs :so ~/.vimrc <cr>
 nnoremap <leader>yf :let @+=expand("%:.") <cr>
+nnoremap <leader>nco :Copilot disable <cr>
+nnoremap <leader>yco :Copilot enable <cr>
 
 func! Winshow()
 	let nno = expand("%:r") . ".out"
@@ -45,7 +48,8 @@ func! Winshow()
 	endif
 endfunc
 
-let $CXXFLAGS='-std=c++17 -Wshadow -Wall  -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG -g'
+"let $CXXFLAGS='-std=c++17 -Wshadow -Wall  -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG -g'
+let $CXXFLAGS='-std=c++26'
 nmap <silent><F9> :w!<cr> :make %< <cr> :cw <cr> :!./%< <cr>
 nmap <f8> :call Winshow() <cr>
 nmap <f4> :packadd termdebug <cr> :Termdebug ./%< <cr>
