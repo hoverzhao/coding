@@ -1,10 +1,11 @@
 #include "bits/stdc++.h"
-#include "bits/competitive.h"
+
+using namespace std;
 
 static int x = []() {
 	ios::sync_with_stdio(false); cin.tie(0);
-	freopen("xxx.in", "r", stdin); 
-	freopen("xxx.out", "w", stdout);
+	//freopen("xxx.in", "r", stdin); 
+	//freopen("xxx.out", "w", stdout);
 	return 0;
 }();
 
