@@ -3,11 +3,12 @@ filetype plugin on
 
 call plug#begin()
 	Plug 'tpope/vim-commentary'
-	Plug 'Exafunction/windsurf.vim'
+"	Plug 'Exafunction/windsurf.vim'
+	Plug 'github/copilot.vim'
 	Plug 'lifepillar/vim-solarized8'
 call plug#end()
 
-set nu ts=4 sw=4 autoindent cindent smartindent noswapfile undofile autoread
+set nu ru ts=4 sw=4 autoindent cindent smartindent noswapfile undofile autoread
 syntax on
 set autochdir
 set undodir="~/.vim/undodir"
@@ -29,9 +30,11 @@ nnoremap <c-k> 5k
 nnoremap <c-h> ^
 nnoremap <c-l> $
 nnoremap <leader>w :w! <cr>
-nnoremap <leader>rc :e ~/.vimrc <cr>
-nnoremap <leader>rs :so ~/.vimrc <cr>
+nnoremap <leader>rc :e ~/_vimrc <cr>
+"nnoremap <leader>rs :so ~/vimrc <cr>
 nnoremap <leader>yf :let @+=expand("%:.") <cr>
+nnoremap <leader>nco :Copilot disable <cr>
+nnoremap <leader>yco :Copilot enable <cr>
 
 func! Winshow()
 	let nno = expand("%:r") . ".out"
@@ -49,17 +52,22 @@ endfunc
 set shell=cmd.exe
 set shellcmdflag=/c
 
-set makeprg=g++\ -std=c++17\ -g\ -Wall\ -fsanitize=address\ %\ -o\ %<.exe
+set makeprg=g++\ -std=c++17\ -g\ -Wall\ -Wextra\ %\ -o\ %<.exe
 nmap <silent> <F9> :w<CR>:make<CR>:cw<cr>:!%<.exe<cr>
 
-“let $CXXFLAGS='-std=c++17 -g -lm -Wall -fsanitize=undefined'
-”nmap <silent><F9> :w!<cr> :make %< <cr> :cw <cr> :!./%< <cr>
+nnoremap <F8> :call Winshow()<CR>
 
-nmap <f8> :call Winshow() <cr>
-nnoremap <F4> :w<CR>:packadd termdebug<CR>:Termdebug %<.exe<CR>
+" =========================
+" F4：Termdebug（Windows 可用）
+" =========================
+packadd termdebug
+let g:termdebug_wide = 10
+nnoremap <F4> :Termdebug %<.exe<CR>
 
-let g:termdebug_wide=10
-nmap <f2> :exec "!ln -s % a.cpp" <cr>
+" =========================
+" F2：Windows 下创建副本（代替 ln -s）
+" =========================
+nnoremap <F2> :silent execute '!copy /Y "' . expand('%') . '" a.cpp'<CR>
 
 "au BufNewFile *.cpp 0r ~/noi/coding/config/skeleton.c | %s/xxx/\=expand("%:r")/g
 au BufNewFile *.cpp 0r ~/noi/coding/config/skeleton_full.c | %s/xxx/\=expand("%:r")/g
