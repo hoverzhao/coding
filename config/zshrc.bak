@@ -104,7 +104,13 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 cd ~/noi/coding
-#export GOOGLE_CLOUD_PROJECT="norse-fragment-465507-p0"
+export http_proxy=http://127.0.0.1:1087
+export https_proxy=http://127.0.0.1:1087
+
+export GOOGLE_CLOUD_PROJECT="norse-fragment-465507-p0"
+export GEMINI_API_KEY="AIzaSyDTdLdybIhawZO5w74r1F9xT-tifG_0RiU"
+export GOOGLE_CLOUD_LOCATION="us-central1"
+
 alias gcc='gcc-15'
 alias g++='g++-15'
 
