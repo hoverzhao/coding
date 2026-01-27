@@ -30,6 +30,5 @@ int main()
     cout<<biArray[0][0]<<","<<biArray[0][1]<<","<<biArray[0][2]<<","<<biArray[0][3]<<endl;
     cout<<biArray[1][0]<<","<<biArray[1][1]<<","<<biArray[1][2]<<","<<biArray[1][3]<<endl;
     cout<<biArray[2][0]<<","<<biArray[2][1]<<","<<biArray[2][2]<<","<<biArray[2][3]<<endl;
-
-    return 0;
+		return 0;
 }

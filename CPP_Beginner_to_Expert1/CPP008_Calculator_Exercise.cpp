@@ -58,7 +58,6 @@ int main()
     cin >> decision2;
 
     if (decision2 == 'y' || decision2 == 'Y')
+		return 0;
         goto beginning;
-
-    return 0;
 }

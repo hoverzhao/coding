@@ -24,7 +24,5 @@ int main()
 
     if(&array[0] == array)
         cout<<"TRUE";
-
-
-    return 0;
+		return 0;
 }

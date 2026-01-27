@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int main()
+main()
 {
     // AND - &&
     // True only when both the expressions are true
@@ -24,7 +24,6 @@ int main()
     // NOT - !
     // Return true if result is false and vice versa.
     cout << !(7>5 && 5!=10) <<endl;
-
-    return 0;
+		return 0;
 
 }

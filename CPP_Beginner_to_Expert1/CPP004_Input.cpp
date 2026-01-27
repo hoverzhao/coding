@@ -18,6 +18,6 @@ int main()
     cin >> surname;
 
     cout << "Welcome "<<name<<" "<<surname<<endl;
+		return 0;
 
-    return 0;
 }

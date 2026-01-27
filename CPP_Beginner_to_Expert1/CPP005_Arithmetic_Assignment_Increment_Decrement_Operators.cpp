@@ -11,12 +11,12 @@ int main()
     cout << a / b <<endl; //Division
     cout << a * b <<endl; //Multiplication
 
-    cout << a % b <<endl; //Modulo -> Reint mainder
+    cout << a % b <<endl; //Modulo -> Remainder
 
     cout << ++a <<endl; //Pre-Increment
     cout << --a <<endl; //Pre-decrement
     cout << a++ <<endl; //Post-Increment
     cout << a-- <<endl; //Post-decrement
 
-    return 0;
+		return 0;
 }

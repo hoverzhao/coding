@@ -16,5 +16,5 @@ int main() {
         digits_count++;
 
     cout<<"The number "<<num<<" has "<<digits_count<<" digit(s)"<<endl;
-    return 0;
+		return 0;
 }

@@ -28,6 +28,5 @@
     for(;;)
         cout<<"Stop me if you can !"<<endl;
     */
-
-    return 0;
+		return 0;
  }

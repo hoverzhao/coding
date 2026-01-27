@@ -26,6 +26,6 @@ int main() {
 
     cout<<result; // Error as result is local to the if block
     */
-    
-    return 0;
+		return 0;
+
 }

@@ -35,8 +35,8 @@ class Samplecopyconstructor
         cout<<x<<" "<<y<<endl;
     }
 };
-/* int main function */
-int main()
+/* main function */
+int int main()
 {
     Samplecopyconstructor obj1(10, 15);     // Normal constructor
     Samplecopyconstructor obj2 = obj1;      // Copy constructor
@@ -44,5 +44,6 @@ int main()
     obj1.display();
     cout<<"Copy constructor : ";
     obj2.display();
+		return 0;
     return 0;
 }

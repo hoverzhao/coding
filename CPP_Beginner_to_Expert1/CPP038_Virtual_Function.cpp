@@ -22,11 +22,11 @@ class B:public A
   cout << "Derived Class is invoked"<<endl;
  }
 };
-int main()
+int int main()
 {
-    A* a;    //pointer of base class
-    B b;     //object of derived class
-    a = &b;
-    a->display();   //Late Binding occurs
-    return 0;
+ A* a;    //pointer of base class
+ B b;     //object of derived class
+ a = &b;
+ a->display();   //Late Binding occurs
+		return 0;
 }

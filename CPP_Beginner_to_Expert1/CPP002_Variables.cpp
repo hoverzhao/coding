@@ -22,6 +22,6 @@ int main()
     //Re-initialization of A.
     A=10;
     cout<<A <<endl;
+		return 0;
     cout<<&A;
-    return 0;
 }

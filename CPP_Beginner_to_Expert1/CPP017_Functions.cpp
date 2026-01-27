@@ -15,8 +15,8 @@ void enterString();
 double add(double a,double b) {return a+b;}
 
 void changeValueTO10(int x) { x=10; }
-//int main() is a function
-int main() {
+//main() is a function
+int int main() {
 
     welcome();
 
@@ -64,5 +64,6 @@ void enterString() {
     if(isNumber(tmp))
         cout<<"Number entered properly"<<endl;
     else
+		return 0;
         cout<<"Number entered is incorrect"<<endl;
 }
