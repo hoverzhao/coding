@@ -33,8 +33,10 @@ nnoremap <leader>w :w! <cr>
 nnoremap <leader>rc :e ~/_vimrc <cr>
 "nnoremap <leader>rs :so ~/vimrc <cr>
 nnoremap <leader>yf :let @+=expand("%:.") <cr>
-nnoremap <leader>nco :Copilot disable <cr>
-nnoremap <leader>yco :Copilot enable <cr>
+
+let g:copilot_enabled = 0
+nnoremap <F12> :Copilot enable<CR>
+nnoremap <c-F12> :Copilot disable<CR>
 
 func! Winshow()
 	let nno = expand("%:r") . ".out"
@@ -78,3 +80,5 @@ au FileType cpp set keywordprg=cppman
 "setxkbmap -option
 "chmod +x dp.sh
 "colo molokai
+
+
