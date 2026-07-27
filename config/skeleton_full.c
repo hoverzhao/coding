@@ -1,5 +1,4 @@
-#include "bits/stdc++.h"
-#include "bits/competitive.h"
+#include <bits/stdc++.h>
 using namespace std;
 
 static int x = []() {

@@ -51,11 +51,17 @@ func! Winshow()
 	endif
 endfunc
 
+func! RunExe()
+	let exebase = expand("%:p:h") .. "\\" .. expand("%:t:r").".exe"
+	exe "!" . exebase 
+endfunc
+
 set shell=cmd.exe
 set shellcmdflag=/c
 
 set makeprg=g++\ -std=c++17\ -g\ -Wall\ -Wextra\ %\ -o\ %<.exe
-nmap <silent> <F9> :w<CR>:make<CR>:cw<cr>:!%<.exe<cr>
+"nmap <silent> <F9> :w<CR>:make<CR>:cw<cr>:! %<.exe<cr>
+nmap <silent> <F9> :w<CR>:make<CR>:cw<cr>:call RunExe()<cr>
 
 nnoremap <F8> :call Winshow()<CR>
 
