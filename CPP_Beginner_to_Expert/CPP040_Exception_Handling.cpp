@@ -15,7 +15,7 @@
         }
  };
 
- double division(double a,double b) throw(DivisionByZeroException)
+ double division(double a,double b) 
  {
      if(b==0)
         throw DivisionByZeroException();

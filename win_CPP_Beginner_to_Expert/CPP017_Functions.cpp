@@ -4,6 +4,7 @@
  **/
 
 #include<iostream>
+#include "CPP017_Functions.h"
 using namespace std;
 
 void welcome(); // Declaration of function

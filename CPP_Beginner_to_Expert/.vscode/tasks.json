@@ -2,19 +2,14 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: g++ 生成活动文件",
-            "command": "/usr/bin/g++",
+            "label": "C/C++: g++.exe 生成活动文件",
+            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
-                "-std=c++17",
-                "-Wall",
-                "-Wextra",
-                "-fsanitize=address",
-                "-D_GLIBCXX_DEBUG",
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
@@ -22,11 +17,8 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": "编译器: /usr/bin/g++"
+            "group": "build",
+            "detail": "调试器生成的任务。"
         }
     ],
     "version": "2.0.0"
