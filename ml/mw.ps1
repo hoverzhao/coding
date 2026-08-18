@@ -3,12 +3,18 @@ Original shell script convert to Powershell for Windows
 Original tool: mlt
 #>
 #mlt raw "i = 0; i = 0; i = 0; i = 0; i = 0; i = 0; i = 0; i = 0; i = 0; i = 0; i = 0; i = 0; i = 0; i = 0; i = 0; i = 0; i = 0; i = 0; i = 0; i = 0; i = 0;"
-
+#mlt raw "a[i] a[i] a[i] a[i] a[i] a[i] a[i] a[i] a[i] a[i] a[i] "
+mlt raw "a[i][j][k]a[q()] a[i][j][k]a[q()] a[i][j][k]a[q()] a[i][j][k]a[q()] a[i][j][k]a[q()] a[i][j][k]a[q()] a[i][j][k]a[q()] a[i][j][k]a[q()] a[i][j][k]a[q()] a[i][j][k]a[q()] a[i][j][k]a[q()]"
+#mlt raw "while(!q.empty() && a[q.back()] > a[i]) q.pop_back(); while(!q.empty() && a[q.back()] > a[i]) q.pop_back(); while(!q.empty() && a[q.back()] > a[i]) q.pop_back(); while(!q.empty() && a[q.back()] > a[i]) q.pop_back(); while(!q.empty() && a[q.back()] > a[i]) q.pop_back(); while(!q.empty() && a[q.back()] > a[i]) q.pop_back();"
+#mlt raw "while(!q.empty() && q.front() <= i-k ) q.pop_front(); while(!q.empty() && q.front() <= i-k ) q.pop_front(); while(!q.empty() && q.front() <= i-k ) q.pop_front(); while(!q.empty() && q.front() <= i-k ) q.pop_front(); while(!q.empty() && q.front() <= i-k ) q.pop_front(); while(!q.empty() && q.front() <= i-k ) q.pop_front();"
 #mlt raw "for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko for (int i = 0; i < 100; ++i) {\r}\x1Bko"
 
-mlt raw "for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko"
+#mlt raw "for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko for (int j = 0; j < 100; --j) {\r}\x1Bko"
 
+#删除for循环
+#mlt raw "va{o0d va{o0d va{o0d va{o0d va{o0d va{o0d va{o0d va{o0d va{o0d va{o0d va{o0d va{o0d va{o0d va{o0d va{o0d va{o0d va{o0d va{o0d va{o0d va{o0d va{o0d"
 
+#mlt raw "2*i-1; 2*i-1; 2*i-1; 2*i-1; 2*i-1; 2*i-1; 2*i-1; 2*i-1; 2*i-1; 2*i-1; 2*i-1; 2*i-1; 2*i-1; 2*i-1; 2*i-1; 2*i-1; 2*i-1; 2*i-1; 2*i-1; 2*i-1; 2*i-1;" 
 #------ insert态 上一行输入 <esc>ko   \x
 # mlt raw ";jkko ;jkko ;jkko ;jkko ;jkko ;jkko ;jkko ;jkko ;jkko ;jkko ;jkko ;jkko ;jkko ;jkko ;jkko ;jkko ;jkko ;jkko ;jkko ;jkko ;jkko "
 #------ insert态 下一行输入 <esc>o
